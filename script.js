@@ -71,6 +71,9 @@ function appendHTMLElements() {
 
 function displayDetails(data, no) {
     // console.log('data', data);
+    if (data === undefined) {
+        return;
+    }
     const moviePoster = document.createElement('img');
     const movieDetails = document.createElement('div');
     const movieTitle = document.createElement('h4');
