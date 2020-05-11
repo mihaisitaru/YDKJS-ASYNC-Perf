@@ -191,7 +191,8 @@ newPromise.then(
 
 // Web workers
 
-var worker = new Worker('http://127.0.0.1:5500/myFirstWorker.js');
+// var worker = new Worker('http://127.0.0.1:5500/myFirstWorker.js');
+var worker = new Worker('https://mihaisitaru.github.io/YDKJS-ASYNC-Perf/myFirstWorker.js');
 worker.addEventListener('message', function (evt) {
     displayDetails(evt.data.response, movieNo++);
 });
